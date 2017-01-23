@@ -1,0 +1,15 @@
+---
+title: "index"
+date: "January 23, 2017"
+output: html_document
+---
+
+```{R, echo=FALSE}
+library(leaflet) 
+map <- leaflet() %>%     
+    addTiles() %>%     
+    addMarkers(lng=-66.6418748, lat=45.9498517, popup = 'Engineering/Computer-Science building!') %>%     
+    addMarkers(lng=-66.6433125, lat=45.9520747, popup = 'The local bakery') %>%     
+    addMarkers(lng=-66.6394501, lat=45.9598094, popup = 'Coffee') 
+map
+```
